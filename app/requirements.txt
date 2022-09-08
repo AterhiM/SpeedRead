@@ -1,5 +1,5 @@
 numpy==1.21.6
-requests==2.27.1
 protobuf==3.20.0
 streamlit==1.11.1
-st-annotated-text==3.0.0
+nltk==3.7
+regex==2022.3.15

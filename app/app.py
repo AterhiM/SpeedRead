@@ -1,6 +1,5 @@
 import streamlit as st
 from src.utils import bionic_reading_try
-import re
 
 st.set_page_config(
     page_title="Bionic Reading - Demo Application",
