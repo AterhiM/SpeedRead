@@ -13,4 +13,4 @@ WORKDIR /app
 COPY /app /app
 
 # Runs app.py to start streamlit
-CMD ["streamlit", "run", "app.py", "--server.port", "5602"]
+CMD ["streamlit", "run", "app.py", "--server.port", "5603"]
