@@ -1,4 +1,6 @@
 import streamlit as st
+import sys
+sys.path.append('./')
 from src.utils import speed_read
 from src.config import LOGO
 
