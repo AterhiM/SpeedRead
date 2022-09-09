@@ -1,0 +1,5 @@
+numpy==1.21.6
+protobuf==3.20.0
+streamlit==1.11.1
+nltk==3.7
+regex==2022.3.15
