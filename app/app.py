@@ -1,18 +1,23 @@
 import streamlit as st
-from src.utils import bionic_reading_try
+import sys
+sys.path.append('./')
+from src.utils import speed_read
+from src.config import LOGO
+
 
 st.set_page_config(
-    page_title="Bionic Reading - Demo Application",
+    page_title="SpeedRead - Demo Application",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 
-st.markdown("<h1 style='text-align: center; color:ushua'>Bionic Reading: Demo Application</h1>", unsafe_allow_html=True)
+st.sidebar.image(LOGO)
+st.markdown("<h1 style='text-align: center; color:ushua'>SpeedRead: Demo Application</h1>", unsafe_allow_html=True)
 
 st.sidebar.markdown("### About:")
 
 st.sidebar.markdown(
-    """This application offers a **Bionic Reading simulation**."""
+    """This application offers a highlighting technique for speed reading."""
 )
 
 default_text = """The heads of UK and US security services have made an unprecedented joint appearance to warn of the threat from China.
@@ -32,5 +37,5 @@ submit = st.button("Highlight !")
 
 # Check to see whether any input text has been inserted
 if (len(input.strip()) > 0) and submit:
-    bold_text = bionic_reading_try(input)
+    bold_text = speed_read(input)
     st.markdown(bold_text)
