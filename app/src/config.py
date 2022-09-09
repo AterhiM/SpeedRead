@@ -1,1 +1,1 @@
-LOGO = "../pictures/speedread_logo.jpg"
+LOGO = "./pictures/speedread_logo.jpg"
