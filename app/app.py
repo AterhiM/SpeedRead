@@ -2,17 +2,17 @@ import streamlit as st
 from src.utils import bionic_reading_try
 
 st.set_page_config(
-    page_title="Bionic Reading - Demo Application",
+    page_title="TextPointer - Demo Application",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 
-st.markdown("<h1 style='text-align: center; color:ushua'>Bionic Reading: Demo Application</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color:ushua'>TextPointer: Demo Application</h1>", unsafe_allow_html=True)
 
 st.sidebar.markdown("### About:")
 
 st.sidebar.markdown(
-    """This application offers a **Bionic Reading simulation**."""
+    """This application offers a highlighting technique for speed reading."""
 )
 
 default_text = """The heads of UK and US security services have made an unprecedented joint appearance to warn of the threat from China.
