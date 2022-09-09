@@ -1,6 +1,11 @@
-# TextPointer
+# SpeedRead
 
-Text highlighting for speed reading
+## Wht is it?
+
+This is a Streamlit application for text highlighting, that aims to solve the problem of slow reading for text.
+
+The solution is introduced as a highlighting of a part of the words in text which is the only thing in a word that the human brain would need to understand the entire meaning of the sentence.
+
 
 ## How to run?
 
