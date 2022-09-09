@@ -1,5 +1,7 @@
 import streamlit as st
 from src.utils import speed_read
+from src.config import LOGO
+
 
 st.set_page_config(
     page_title="SpeedRead - Demo Application",
@@ -7,6 +9,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+st.sidebar.image(LOGO)
 st.markdown("<h1 style='text-align: center; color:ushua'>SpeedRead: Demo Application</h1>", unsafe_allow_html=True)
 
 st.sidebar.markdown("### About:")
