@@ -1,5 +1,7 @@
 # SpeedRead
 
+![SpeedRead Logo](https://github.com/AterhiM/TextPointer/blob/dev/app/pictures/speedread.jpg)
+
 ## Wht is it?
 
 This is a Streamlit application for text highlighting, that aims to solve the problem of slow reading for text.
