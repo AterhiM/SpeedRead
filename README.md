@@ -1,6 +1,6 @@
 # SpeedRead
 
-![SpeedRead Logo](https://github.com/AterhiM/TextPointer/blob/dev/app/pictures/speedread.jpg)
+![SpeedRead Logo](https://github.com/AterhiM/TextPointer/blob/main/app/pictures/speedread_logo.jpg)
 
 ## What is it?
 
