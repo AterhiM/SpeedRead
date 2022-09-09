@@ -18,7 +18,7 @@ def get_subwords_span(substring_list, fullstring_list):
             clean_stems.append((0, len(substring)))
     return clean_stems
 
-def bionic_reading_try(full_text:str):
+def speed_read(full_text:str):
     ps = PorterStemmer()
     words = word_tokenize(full_text.replace('"', '\\"'))
     words_stems = [ps.stem(word, to_lowercase=False) for word in words]
@@ -27,7 +27,6 @@ def bionic_reading_try(full_text:str):
     bold_text = []
     for i, (start, end) in enumerate(substring_span):
         word = words[i]
-        # bold_text.append('\033[1m' + word[start:end] + '\033[0m' + word[end:])
         if word[start:end].isalpha():
             bold_text.append('**' + word[start:end] + '**' + word[end:])
         else:

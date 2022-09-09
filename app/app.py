@@ -1,13 +1,13 @@
 import streamlit as st
-from src.utils import bionic_reading_try
+from src.utils import speed_read
 
 st.set_page_config(
-    page_title="TextPointer - Demo Application",
+    page_title="SpeedRead - Demo Application",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 
-st.markdown("<h1 style='text-align: center; color:ushua'>TextPointer: Demo Application</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color:ushua'>SpeedRead: Demo Application</h1>", unsafe_allow_html=True)
 
 st.sidebar.markdown("### About:")
 
@@ -32,5 +32,5 @@ submit = st.button("Highlight !")
 
 # Check to see whether any input text has been inserted
 if (len(input.strip()) > 0) and submit:
-    bold_text = bionic_reading_try(input)
+    bold_text = speed_read(input)
     st.markdown(bold_text)
