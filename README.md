@@ -2,9 +2,9 @@
 
 ![SpeedRead Logo](https://github.com/AterhiM/TextPointer/blob/dev/app/pictures/speedread.jpg)
 
-## Wht is it?
+## What is it?
 
-This is a Streamlit application for text highlighting, that aims to solve the problem of slow reading for text.
+This is a Streamlit application for text highlighting, that aims to help reading text faster.
 
 The solution is introduced as a highlighting of a part of the words in text which is the only thing in a word that the human brain would need to understand the entire meaning of the sentence.
 
