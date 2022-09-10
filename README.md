@@ -14,13 +14,13 @@ The solution is introduced as a highlighting of a part of the words in text whic
 **1. Clone the repository:**
 
 ```bash
-git clone "https://github.com/AterhiM/TextPointer.git"
+git clone "https://github.com/AterhiM/SpeedRead.git"
 ```
 
 **2. Build docker image:**
 
 ```bash
-docker build -t text-pointer-demo-image .
+docker build -t speed-read-demo-image .
 ```
 
 **3. Run the application using docker-compose:**
@@ -30,9 +30,10 @@ docker-compose -f ./docker-compose.yml up
 ```
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+For major changes, please open an issue first to discuss what you would like to change. 
 Please make sure to update tests as appropriate.
 
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)

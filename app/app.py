@@ -1,7 +1,7 @@
 import streamlit as st
 import sys
 sys.path.append('./')
-from src.utils import speed_read
+from src.utils import speed_read_by_sentence
 from src.config import LOGO
 
 
@@ -37,5 +37,5 @@ submit = st.button("Highlight !")
 
 # Check to see whether any input text has been inserted
 if (len(input.strip()) > 0) and submit:
-    bold_text = speed_read(input)
+    bold_text = speed_read_by_sentence(input)
     st.markdown(bold_text)
