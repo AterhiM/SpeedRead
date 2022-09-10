@@ -3,7 +3,7 @@ import nltk
 nltk.download('punkt')
 
 from nltk.stem import PorterStemmer
-from nltk.tokenize import word_tokenize
+from nltk.tokenize import word_tokenize, sent_tokenize
 
 def get_subwords_span(substring_list, fullstring_list):
     clean_stems = []
@@ -18,7 +18,7 @@ def get_subwords_span(substring_list, fullstring_list):
             clean_stems.append((0, len(substring)))
     return clean_stems
 
-def speed_read(full_text:str):
+def speed_read_by_words(full_text:str):
     ps = PorterStemmer()
     words = word_tokenize(full_text.replace('"', '\\"'))
     words_stems = [ps.stem(word, to_lowercase=False) for word in words]
@@ -32,3 +32,15 @@ def speed_read(full_text:str):
         else:
             bold_text.append(words[i][start:end])
     return " ".join(bold_text).replace('\\', '')
+
+def speed_read_by_sentence(full_text:str):
+
+    # Tokenize the full text into sentences
+    text_sentences = sent_tokenize(full_text)
+
+    ## Run speed reading over sentences and return the result
+    return "\n\n".join(
+        [
+            speed_read_by_words(sentence) for sentence in text_sentences
+        ]
+    )
