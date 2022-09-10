@@ -1,8 +1,8 @@
 version: "3.7"
 
 services:
-  text-pointer-demo:
-    image: "text-pointer-demo-image"
+  speed-read-demo:
+    image: "speed-read-demo-image"
     restart: always
     ports:
       - "5603:5603"
